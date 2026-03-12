@@ -8,13 +8,14 @@ BOOKS = [
     {"id": 3, "title": "The Pragmatic Programmer", "author": "David Thomas","genre": "Technology"},
     {"id": 4, "title": "Sapiens",           "author": "Yuval Noah Harari", "genre": "History"},
     {"id": 5, "title": "Deep Work",         "author": "Cal Newport",       "genre": "Self-Help"},
+    {"id": 6, "title": "The Phoenix Project", "author": "Gene Kim", "genre": "Technology"},
 ]
 
 @app.route('/')
 def home():
     return jsonify({
         "service": "Book Catalog API",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "endpoints": ["/books", "/books/<id>"]
     })
 
